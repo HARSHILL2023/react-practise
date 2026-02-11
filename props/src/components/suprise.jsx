@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Suprise = () => {
-    const arry=["harshil"];
+    const [frnd,setfrnd]=useState(["harshil","harhihil"]);
+    const update = () =>{
+        setfrnd(frnd.map((e)=>(e==="harshil"?"badlay gayu":e)))
+    }
 
   return (
     <>
     
-    <h1>{arry}</h1> 
-    <input type="text" onChange={arry.push((e)=>e.target.value)}/>
-    <h1>{arry}</h1>
-
+   <h1>{frnd}</h1>
+  <button onClick={update}></button>
 
     </>
   )

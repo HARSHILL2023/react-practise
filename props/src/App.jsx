@@ -7,6 +7,8 @@ import { Cart } from './components/cart'
 import Hello from './components/weather'
 import { AiFillAlert } from "react-icons/ai";
 import Suprise from './components/suprise'
+import Component2 from './components/component2'
+import Comp from './components/comp'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,9 +22,9 @@ function App() {
     //  <AiFillAlert /> */}
 
 
-<Suprise />
-
-
+{/* <Suprise /> */}
+      <Comp onclickhandler={() =>setCount(count+1)} count={count}/>
+      <Component2  onclickhandler={() =>setCount(count+1)} count={count} />
     </>
   )
 }
