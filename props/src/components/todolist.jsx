@@ -9,7 +9,7 @@ const Todolist = () => {
         setarray([...array,name]);
         setname("");
     }
-    function clear(){
+    const clear=() =>{
         setarray([])
     }
   return (
