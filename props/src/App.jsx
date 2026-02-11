@@ -9,22 +9,14 @@ import { AiFillAlert } from "react-icons/ai";
 import Suprise from './components/suprise'
 import Component2 from './components/component2'
 import Comp from './components/comp'
-
+import Todolist from './components/todolist'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    {/* //  <Props name="kalu kaliya"/>
+    <Todolist />
 
-    //  <Cart />
-    //  <Hello temp={-12}/>
-    //  <AiFillAlert /> */}
-
-
-{/* <Suprise /> */}
-      <Comp onclickhandler={() =>setCount(count+1)} count={count}/>
-      <Component2  onclickhandler={() =>setCount(count+1)} count={count} />
     </>
   )
 }
