@@ -6,17 +6,23 @@ import Props from './components/props'
 import { Cart } from './components/cart'
 import Hello from './components/weather'
 import { AiFillAlert } from "react-icons/ai";
+import Suprise from './components/suprise'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <Props name="kalu kaliya"/>
+    {/* //  <Props name="kalu kaliya"/>
 
-     <Cart />
-     <Hello temp={-12}/>
-     <AiFillAlert />
+    //  <Cart />
+    //  <Hello temp={-12}/>
+    //  <AiFillAlert /> */}
+
+
+<Suprise />
+
+
     </>
   )
 }
