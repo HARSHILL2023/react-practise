@@ -1,0 +1,45 @@
+/* SECTION TITLE */
+h2 {
+  color: #e5e7eb;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 32px 24px 16px;
+  text-transform: capitalize;
+}
+
+/* BUTTON CONTAINER */
+.recoms-button {
+  display: flex;
+  gap: 14px;
+  padding: 0 24px 24px;
+  flex-wrap: wrap;
+}
+
+/* BUTTON STYLE */
+.btns {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #cbd5f5;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.btns:hover {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.35);
+}
+
+/* OPTIONAL: ACTIVE / SELECTED STATE */
+.btns:active {
+  transform: scale(0.96);
+}
