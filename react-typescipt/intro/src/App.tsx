@@ -1,12 +1,11 @@
 import React from 'react'
+import Usr from './components/usr'
 
 const App = () => {
   return (
-    <div>
-      <h1>
-        harshil 
-      </h1>
-    </div>
+    <>
+      <Usr name='harshil' age={18} ismaried={false}/>
+    </>
   )
 }
 
