@@ -1,10 +1,22 @@
-type person={
-    name:string
-};
+//string
 
-const person: person={
-    name:"john",
-};
+let Name: string ="harshil";
 
-console.log(person.name)
-console.log("hello");
+Name="nathi padyu aju";
+
+console.log(Name);
+
+
+//number
+
+let number: number =12
+
+console.log(number)
+
+
+
+//bollean
+ 
+let bool: boolean = true;
+
+console.log(bool);
