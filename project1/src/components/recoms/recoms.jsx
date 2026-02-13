@@ -1,19 +1,21 @@
-import React from 'react'
-import './recoms.css'
+import Button from "../button";
+import "./recoms.css";
 
-const recoms = () => {
+const Recommended = ({ handleClick }) => {
   return (
-   <>
-    <h2>recomended </h2>
-    <div className="recoms-button">
-      <button className='btns'>all products</button>
-      <button className='btns'>nike</button>
-      <button className='btns'>puma</button>
-      <button  className='btns'>vans</button>
-    </div>
-   
-   </>
-  )
-}
+    <>
+      <div>
+        <h2 className="recommended-title">Recommended</h2>
+        <div className="recommended-flex">
+          <Button onClickHandler={handleClick} value="" title="All Products" />
+          <Button onClickHandler={handleClick} value="Nike" title="Nike" />
+          <Button onClickHandler={handleClick} value="Adidas" title="Adidas" />
+          <Button onClickHandler={handleClick} value="Puma" title="Puma" />
+          <Button onClickHandler={handleClick} value="Vans" title="Vans" />
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default recoms
+export default Recommended;

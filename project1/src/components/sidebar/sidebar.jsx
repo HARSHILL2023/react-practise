@@ -1,26 +1,21 @@
-import "./Sidebar.css"
-import { BsMinecart } from "react-icons/bs"
+import Category from './category/category'
+import Price from "./price/price";
+import Colors from "./colors/color";
+import "./Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = ({ handleChange }) => {
   return (
-    <aside className="sidebar">
-      <div className="logo">
-        <BsMinecart />
-      </div>
+    <>
+      <section className="sidebar">
+        <div className="logo-container">
+          <h1>🛒</h1>
+        </div>
+        <Category handleChange={handleChange} />
+        <Price handleChange={handleChange} />
+        <Colors handleChange={handleChange} />
+      </section>
+    </>
+  );
+};
 
-      <div className="section">
-        <h3>Category</h3>
-        <button>puma</button>
-        <button>vans</button>
-      </div>
-
-      <div className="section">
-        <h3>Colors</h3>
-        <button>Black</button>
-        <button>White</button>
-      </div>
-    </aside>
-  )
-}
-
-export default Sidebar
+export default Sidebar;

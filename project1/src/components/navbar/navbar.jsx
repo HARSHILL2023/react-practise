@@ -1,33 +1,32 @@
-import React from 'react'
-import './navbar.css'
-import { FiHeart, FiShoppingCart, FiUser } from 'react-icons/fi'
+import { FiHeart } from "react-icons/fi";
+import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
+import "./navbar.css";
 
-const Navbar = () => {
+const Nav = ({ handleInputChange, query }) => {
   return (
     <nav>
-      <header>
-        <div className="nav-container">
-          <input
-            type="text"
-            placeholder="Search for shoes"
-            className="search-input"
-          />
-        </div>
-
-        <div className="profilecontainer">
-          <a href="#">
-            <FiHeart className="nav-icons" />
-          </a>
-          <a href="#">
-            <FiShoppingCart className="nav-icons" />
-          </a>
-          <a href="#">
-            <FiUser className="nav-icons" />
-          </a>
-        </div>
-      </header>
+      <div className="nav-container">
+        <input
+          className="search-input"
+          type="text"
+          onChange={handleInputChange}
+          value={query}
+          placeholder="Enter your search shoes."
+        />
+      </div>
+      <div className="profile-container">
+        <a href="#">
+          <FiHeart className="nav-icons" />
+        </a>
+        <a href="">
+          <AiOutlineShoppingCart className="nav-icons" />
+        </a>
+        <a href="">
+          <AiOutlineUserAdd className="nav-icons" />
+        </a>
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Nav;
