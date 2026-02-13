@@ -68,3 +68,13 @@ header {
   color: #38bdf8;
   transform: translateY(-2px) scale(1.1);
 }
+nav {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  right: 0;
+  height: 70px;
+
+  background: linear-gradient(180deg, #122c3b, #0f2027);
+  z-index: 200;
+}

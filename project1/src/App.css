@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+.main-content {
+  margin-left: 240px; /* SAME AS SIDEBAR WIDTH */
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-left: 240px;      /* pushes content right of sidebar */
+  padding: 40px;
+  min-height: 100vh;
+}

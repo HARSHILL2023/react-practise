@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/navbar/navbar'
 import Products from './components/products/products'
 import Recoms from './components/recoms/recoms'
+import Sidebar from './components/sidebar/sidebar'
 
 
 function App() {
@@ -15,7 +16,11 @@ function App() {
 
     <Navbar />
     <Recoms />  
-    <Products />
+    <Sidebar />
+    <div className="main-content">
+        <Products />
+      </div>
+    
     
     
     </>

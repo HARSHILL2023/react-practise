@@ -1,48 +1,38 @@
-import React from 'react'
-import { AiFillStar } from 'react-icons/ai'
-import { BsFillBagHeartFill } from "react-icons/bs";
-import './products.css'
+import "./Products.css"
+import { AiFillStar } from "react-icons/ai"
+import { BsBag } from "react-icons/bs"
 
-
-
-const products = () => {
+const Products = () => {
   return (
-    <>
+    <div className="products">
+      <div className="card">
+        <img
+          src="https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg"
+          alt="shoe"
+        />
 
-    <section className="class-container">
-    
-    <section className="card">
-      <img className='' src="https://m.media-amazon.com/images/I/61uw5RDxKQL._AC_UY625_.jpg" alt="" />
-    
-      <div className="card-details">
-        
-      <div className="cardtitle">
-        <h3 className='card-title'>shoe</h3>
-        <section className="card-review">
-          <AiFillStar />
-          <AiFillStar />
-          <AiFillStar />
-          <AiFillStar />
-        </section>
-        <section className="card-price">
+        <div className="card-body">
+          <h4>Shoe</h4>
+
+          <div className="stars">
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+          </div>
+
           <div className="price">
-            <del>300$</del>
-            <h3>30$</h3>
+            <span className="old">$300</span>
+            <span className="new">$30</span>
           </div>
-          <div className="bag">
-  <BsFillBagHeartFill />
-          </div>
-        </section>
+
+          <button className="cart-btn">
+            <BsBag />
+          </button>
+        </div>
       </div>
-
-        </div>    
-    </section>
-
-
-    </section>
-
-    </>
+    </div>
   )
 }
 
-export default products
+export default Products
