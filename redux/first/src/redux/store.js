@@ -1,8 +1,8 @@
-import {configureStore} from '@reduxjs/toolkit'
-import { counter } from './counter'
+import { configureStore } from '@reduxjs/toolkit'
+import counter from './counter'
 
-export const  store = configureStore({
-    reducer:{
-        counting:counter,
-    },
+export const store = configureStore({
+  reducer: {
+    counting: counter
+  },
 })
