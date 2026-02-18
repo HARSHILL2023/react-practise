@@ -1,3 +1,5 @@
+//function in typescript  javascript
+
 function add (x: number,y :number)
 {
     return(
@@ -15,7 +17,7 @@ const multiply= (x:number,y:number) =>{
 console.log(multiply(12,12));
 
 
-//default value to prvide in function
+//default value to provide  in function
 
 
 function addd (x: number = 12,y :number = 10)
